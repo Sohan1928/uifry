@@ -1,4 +1,4 @@
-import IconSvg from "./svg/iconSvg";
+import IconSvg from "./svg/IconSvg";
 import StarSvg from "./svg/StarSvg";
 
 const Navbar = () => {
@@ -7,6 +7,7 @@ const Navbar = () => {
       <div className="flex items-center gap-2 md:gap-11">
         <h4 className="flex items-center gap-2">
           <IconSvg></IconSvg>
+          <span className="size-2 bg-white absolute top-[19px] md:top-[28px] left-[24px] md:left-[122px] rounded-full"></span>
           <p className="text-4xl font-bold text-[#000000]">
             uifry<span className="font-normal text-base align-super">™</span>
           </p>
@@ -31,10 +32,12 @@ const Navbar = () => {
           Download
         </button>
       </div>
+      {/* right star */}
       <div className="absolute right-0 md:right-6 size-9 md:size-16 -bottom-6 md:-bottom-6">
         <StarSvg></StarSvg>
       </div>
-      <div className="absolute left-0 md:left-6 size-7 md:size-10 rotate-32 -bottom-16 md:-bottom-28">
+      {/* left start */}
+      <div className="absolute left-0 md:left-6 size-7 md:size-10 rotate-32 -bottom-8 md:-bottom-16">
         <StarSvg></StarSvg>
       </div>
     </div>
