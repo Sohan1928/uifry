@@ -1,8 +1,9 @@
 import IconSvg from "./svg/iconSvg";
+import StarSvg from "./svg/StarSvg";
 
 const Navbar = () => {
   return (
-    <div className="mt-10 flex items-center justify-between">
+    <div className="mt-10 flex items-center justify-between px-4 md:px-28 relative">
       <div className="flex items-center gap-2 md:gap-11">
         <h4 className="flex items-center gap-2">
           <IconSvg></IconSvg>
@@ -26,9 +27,15 @@ const Navbar = () => {
         </span>
       </div>
       <div>
-        <button className="bg-[#000000] px-4 md:px-8 py-2 md:py-4 rounded-md text-white cursor-pointer font-medium">
+        <button className="bg-[#000000] px-3 md:px-8 py-2 md:py-4 rounded-sm text-white cursor-pointer font-medium">
           Download
         </button>
+      </div>
+      <div className="absolute right-0 md:right-6 size-9 md:size-16 -bottom-6 md:-bottom-6">
+        <StarSvg></StarSvg>
+      </div>
+      <div className="absolute left-0 md:left-6 size-7 md:size-10 rotate-32 -bottom-16 md:-bottom-28">
+        <StarSvg></StarSvg>
       </div>
     </div>
   );
