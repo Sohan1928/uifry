@@ -3,11 +3,12 @@ import StarSvg from "./svg/StarSvg";
 
 const Navbar = () => {
   return (
-    <div className="mt-10 flex items-center justify-between px-4 md:px-28 relative">
+    <div className="mt-10 flex items-center justify-between relative">
       <div className="flex items-center gap-2 md:gap-11">
         <h4 className="flex items-center gap-2">
           <IconSvg></IconSvg>
-          <span className="size-2 bg-white absolute top-[19px] md:top-[28px] left-[24px] md:left-[122px] rounded-full"></span>
+          {/* white spot */}
+          <span className="size-2 bg-white absolute top-[19px] md:top-[28px] left-[9px] md:left-[10px] rounded-full"></span>
           <p className="text-4xl font-bold text-[#000000]">
             uifry<span className="font-normal text-base align-super">™</span>
           </p>
@@ -27,17 +28,18 @@ const Navbar = () => {
           </a>
         </span>
       </div>
+      {/* download button */}
       <div>
-        <button className="bg-[#000000] px-3 md:px-8 py-2 md:py-4 rounded-sm text-white cursor-pointer font-medium">
+        <button className="bg-[#000000] px-3 md:px-8 py-2 md:py-3 rounded-sm text-white cursor-pointer font-medium">
           Download
         </button>
       </div>
       {/* right star */}
-      <div className="absolute right-0 md:right-6 size-9 md:size-16 -bottom-6 md:-bottom-6">
+      <div className="absolute -right-5 md:-right-16 size-9 md:size-14 -bottom-6 md:-bottom-10">
         <StarSvg></StarSvg>
       </div>
       {/* left start */}
-      <div className="absolute left-0 md:left-6 size-7 md:size-10 rotate-32 -bottom-8 md:-bottom-16">
+      <div className="absolute -left-6 md:-left-16 size-7 md:size-10 rotate-32 -bottom-8 md:-bottom-16">
         <StarSvg></StarSvg>
       </div>
     </div>
