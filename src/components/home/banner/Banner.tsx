@@ -4,6 +4,9 @@ import CircleSvg from "../CircleSvg";
 import CircleBgSvg from "./svg/CircleBgSvg";
 import IphoneFrontSvg from "./svg/IphoneFrontSvg";
 import IphoneFrontSvg2 from "./svg/IphoneFrontSvg2";
+import AchievementSvg from "./svg/AchievementSvg";
+import EllipseSvg from "./svg/EllipseSvg";
+import StartSvg2 from "./svg/StartSvg2";
 
 const Banner = () => {
   return (
@@ -31,6 +34,12 @@ const Banner = () => {
             </span>
           </button>
         </div>
+        <span className="absolute rotate-16 size-10 left-12 top-72 md:left-28 md:top-80">
+          <StartSvg2></StartSvg2>
+        </span>
+        <div className="mt-6 md:-left-8 absolute h-[200px] w-[250px] md:h-[427px] md:w-[569px]">
+          <AchievementSvg></AchievementSvg>
+        </div>
       </div>
       {/* circle svg */}
       <div className="absolute z-0 top-20 left-0 h-[200px] w-[300px] md:h-[430px] md:w-[517px] md:left-40">
@@ -38,12 +47,12 @@ const Banner = () => {
       </div>
 
       {/* banner right side content */}
-      <div className="md:w-1/2 mt-12 md:mt-0">
+      <div className="md:w-1/2 mt-44 md:mt-0">
         <div className="relative h-[400px] md:h-[726px] w-[350px] md:w-[656px]">
           <CircleBgSvg></CircleBgSvg>
         </div>
       </div>
-      <div className="absolute top-40 md:top-12 right-0 md:right-0">
+      <div className="absolute top-72 md:top-12 right-0 md:right-0 z-50">
         <span className="absolute top-90 md:top-56 right-0 md:right-10 w-[200px] md:w-[476px] h-[360px] md:h-[752px]">
           <IphoneFrontSvg></IphoneFrontSvg>
         </span>
@@ -54,6 +63,12 @@ const Banner = () => {
           <IphoneFrontSvg></IphoneFrontSvg>
         </span>
       </div>
+      <div className="absolute hidden md:block md:right-24 md:top-[490px] z-0">
+        <EllipseSvg></EllipseSvg>
+      </div>
+      <span className="absolute size-10 hidden md:block md:right-[530px] md:top-[760px]">
+        <StartSvg2></StartSvg2>
+      </span>
     </div>
   );
 };
