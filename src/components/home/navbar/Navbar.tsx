@@ -8,7 +8,7 @@ const Navbar = () => {
         <h4 className="flex items-center gap-2">
           <IconSvg></IconSvg>
           {/* white spot */}
-          <span className="size-2 bg-white absolute top-[19px] md:top-[28px] left-[9px] md:left-[10px] rounded-full"></span>
+          <span className="size-2 bg-white absolute top-[19px] md:top-[24px] left-[9px] md:left-[10px] rounded-full"></span>
           <p className="text-4xl font-bold text-[#000000]">
             uifry<span className="font-normal text-base align-super">™</span>
           </p>
