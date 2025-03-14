@@ -3,16 +3,24 @@ import StarSvg from "./svg/StarSvg";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 
+gsap.registerPlugin(useGSAP);
+
 const Navbar = () => {
   useGSAP(() => {
     const tl = gsap.timeline();
-    tl.from("#uifryIcon", { y: -20, duration: 1.2, opacity: 0, delay: 0.5 });
+    tl.from("#uifryIcon", { y: -20, duration: 1, opacity: 0, delay: 0.5 });
     tl.from("#navDownloadBtn", { y: -20, duration: 0.6, opacity: 0 });
     tl.from("#navSpan h6", {
       y: -10,
       duration: 0.5,
       opacity: 0,
       stagger: 0.2,
+    });
+    tl.from("#start1", {
+      y: -50,
+      duration: 1.5,
+      opacity: 0,
+      stagger: 0.3,
     });
   });
 
@@ -47,11 +55,17 @@ const Navbar = () => {
         </button>
       </div>
       {/* right star */}
-      <div className="absolute -right-5 md:-right-16 size-9 md:size-14 -bottom-6 md:-bottom-10">
+      <div
+        id="start1"
+        className="absolute -right-5 md:-right-16 size-9 md:size-14 -bottom-6 md:-bottom-10"
+      >
         <StarSvg></StarSvg>
       </div>
       {/* left start */}
-      <div className="absolute -left-6 md:-left-16 size-7 md:size-10 rotate-32 -bottom-8 md:-bottom-16">
+      <div
+        id="start1"
+        className="absolute -left-6 md:-left-16 size-7 md:size-10 rotate-32 -bottom-8 md:-bottom-16"
+      >
         <StarSvg></StarSvg>
       </div>
     </div>
