@@ -20,7 +20,11 @@ const Navbar = () => {
       y: -50,
       duration: 1.5,
       opacity: 0,
+      rotate: 720,
+      ease: "bounce",
       stagger: 0.3,
+      yoyo: true,
+      repeat: -1,
     });
   });
 
